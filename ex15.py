@@ -22,12 +22,12 @@ line3 = input("line3: ")
 
 print("im going to write these to the file")
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+target.write(f"\n{line1}\n{line2}\n{line3}")
+#target.write("\n")
+#target.write(line2)
+#target.write("\n")
+#target.write(line3)
+#target.write("\n")
 
 print("and finally,we close it")
 target.close()
