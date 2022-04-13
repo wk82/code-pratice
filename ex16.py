@@ -11,7 +11,7 @@ in_file = open(from_file).read() #合并代码
 
 print(f"the input file is {len(in_file)} bytes long.
 \ndoes the output file exist? {exists(to_file)} \n",
-input("ready, hit return to continue , ctrl-c to abort."))
+input("ready, hit return to continue , ctrl-c to abort.")) #合并代码
 
 #print(f"does the output file exist? {exists(to_file)}")
 #print("ready, hit return to continue , ctrl-c to abort.")
