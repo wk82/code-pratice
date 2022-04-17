@@ -2,7 +2,7 @@ import sys
 script, encoding, error = sys.argv
 
 
-def main(language_file, encoding, errors): #定义main函数
+def main(language_file, encoding, errors): #定义main函数,导入文件地址，编码格式，错误处理机制
     line = language_file.readline()        #读一段language_file并将内容传递给line变量
 
     if line:
