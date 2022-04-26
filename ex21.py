@@ -23,9 +23,9 @@ main(languages, encoding, error) #调用main函数
 
 
 # encode() 编码字符串 str.encode([encoding="utf-8"][,errors="strict"])
-#error指定错误处理方式，其可选择值可以是：
-#strict：遇到非法字符就抛出异常。
-#ignore：忽略非法字符。
-#replace：用“？”替换非法字符。
-#xmlcharrefreplace：使用 xml 的字符引用
-# decode() 解码字节串
+           #error指定错误处理方式，其可选择值可以是：
+           #strict：遇到非法字符就抛出异常。
+           #ignore：忽略非法字符。
+           #replace：用“？”替换非法字符。
+           #xmlcharrefreplace：使用 xml 的字符引用
+# decode() 解码字节串,解码时要选择和编码时一样的格式，否则会抛出异常
