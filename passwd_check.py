@@ -27,3 +27,12 @@ def check(pwd):
 
 
 print(check('sdfefsf345.,,H'))
+
+
+#String模块中的常量：
+#string.digits: 生成所有数字 0~9
+#string.ascii_letters 生成所有字母（大小写）
+#string.lowercase：所有小写字母
+#string.uppercase：所有大写字母
+#string.punctuation：所有标点
+#string.printable：可打印字符的字符串
