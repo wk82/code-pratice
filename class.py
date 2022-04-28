@@ -9,7 +9,7 @@ class animal():
 #        self.name = name
 #    def great(self):
 #        print("wangwang, iam %s" % self.name)
-class dog(animal): # 子类继承animal父类定义的属性
+class dog(animal): # 子类继承animal父类定义的属性、方法，避免重复代码
     def great(self):
         print("wangwang, iam %s " %self.name)
 
@@ -26,7 +26,7 @@ def hello(animal):
 t = animal("pig")
 hello(t)
 
-dog = dog("dog")
+#dog = dog("dog")
 hello(dog)
 
 
