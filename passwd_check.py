@@ -10,20 +10,20 @@ def check(pwd):
     r = [False] * 4
     for ch in pwd:
         #是否包含数字
-        if ch in string.digits:
+        if not r[0] and ch in string.digits:
             r[0] = True
         #是否包含小写字母
-        elif ch in string.ascii_lowercase:
+        elif not r[1] and ch in string.ascii_lowercase:
             r[1] = True
         #是否包含大写字母
-        elif ch in string.ascii_uppercase:
+        elif not r[2] and ch in string.ascii_uppercase:
             r[2] = True
         #是否包含标点符号
-        elif ch in './;<>':
+        elif not r[3] and ch in './;<>':
             r[3] = True
         #统计包含的字符种类，返回密码强度
     print(r)
     return d.get(str(r.count(True)), 'errors')
 
 
-print(check('sejhHljk12'))
+print(check('sdfefsf345.,,H'))
