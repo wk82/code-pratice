@@ -79,3 +79,20 @@ try:
 
 except EOFError:
     print("\nbye")
+
+
+#try语句子句形式表
+#except: 捕获所有异常
+#except name: 只捕获特定的异常
+#except name,value: 捕获异常和它的附加数据（将异常的信息保存到value，）
+#except (name1,name2): 捕获任何列出的异常
+#else: 如果没有异常
+#finally: 总是执行#
+
+#try:
+#   f = open('file.txt')
+#except IOError, e:
+#   print e
+#else:
+#   print 'wrong'
+#[Errno 2] No such file or directory: 'file.txt'
