@@ -2,6 +2,7 @@ import string
 
 def check(pwd):
     #密码必须大于6个字符
+    #isinstance() 函数来判断一个对象是否是一个已知的类型
     if not isinstance(pwd, str) or len(pwd) < 6:
         return "not suitable for passwd"
     #密码强度等级与包含字符等级种类的对应关系
