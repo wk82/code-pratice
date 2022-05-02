@@ -11,12 +11,13 @@ class animal():
 #        print("wangwang, iam %s" % self.name)
 class dog(animal): # 子类继承animal父类定义的属性、方法，避免重复代码
     def great(self):
+        #super().great() #super()调用父类的方法
         print("wangwang, iam %s " %self.name)
 
 #animal = animal('animal')
 #animal.great()
-dog = dog('dog')
-dog.great()
+#dog = dog('dog')
+#dog.great()
 
 
 #多态，只调用父类，也可以调用子类的函数，使用更灵活
@@ -26,21 +27,21 @@ def hello(animal):
 t = animal("pig")
 hello(t)
 
-#dog = dog("dog")
+dog = dog("dog")
 hello(dog)
 
 
 # Iterators 循环
-class Fib():
-    def __init__(self):
-        self.a, self.b =0, 1
-    def __iter__(self):
-        return self
-    def __next__(self):
-        self.a, self.b = self.b, self.a + self.b
-        return self.a
-fib = Fib()
-for i in fib:
-    if i > 10:
-        break
-    print(i, end='')
+#class Fib():
+#    def __init__(self):
+#        self.a, self.b =0, 1
+#    def __iter__(self):
+#        return self
+#    def __next__(self):
+#        self.a, self.b = self.b, self.a + self.b
+#        return self.a
+#fib = Fib()
+#for i in fib:
+#    if i > 10:
+#        break
+#    print(i, end='')
