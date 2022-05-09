@@ -66,7 +66,7 @@ try:
         snippets = list(phrases.keys())
         #dict.keys() 字典key的值、dict.values() 字典value值 和 dict.items() 返回的都是视图对象
         random.shuffle(snippets)
-        #andom.shuffle()如果你想将一个序列中的元素，随机打乱
+        #random.shuffle()如果你想将一个序列中的元素，随机打乱
         for snippet in snippets:
             phrase = phrases[snippet]
             question, answer = convert(snippet, phrase)
