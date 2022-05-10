@@ -28,6 +28,8 @@ class employee(person):
         ##??
         self.salary = salary
 
+class fish(animal):
+    pass
 ##??
 class salmon(fish):
     pass
@@ -50,6 +52,7 @@ mary.pet = satan
 
 ##??
 frank = employee("frank", 120000)
+print("this is " , frank.name)
 
 ##??
 frank.pet = rover

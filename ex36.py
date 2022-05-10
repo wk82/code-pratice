@@ -1,15 +1,16 @@
 from sys import exit
 from random import randint
 from textwrap import dedent
+# 导入模块
 
-class scene(object):
-    def enter(self):
+class scene(object):    #创建scene类
+    def enter(self):    #定义enter函数
         print("this scene is not yet configured.")
         print("subclass it and implement enter().")
         exit(1)
 
-class engine(object):
-    def __init__(self, scene_map):
+class engine(object): #创建engine类
+    def __init__(self, scene_map):  
         self.scene_map = scene_map
 
     def play(self):
