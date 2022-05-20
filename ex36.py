@@ -10,10 +10,10 @@ class scene(object):    #创建scene类
         exit(1)
 
 class engine(object): #创建engine类
-    def __init__(self, scene_map):  
+    def __init__(self, scene_map):  #定义初始化属性
         self.scene_map = scene_map
 
-    def play(self):
+    def play(self):  #定义engine类中play方法
         current_scene = self.scene_map.opening_scene()
         last_scene = self.scene_map.next_scene('finished')
 
