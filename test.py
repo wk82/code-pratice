@@ -61,3 +61,6 @@
 #son.implicit()
 #son.override()
 #son.altered()
+stuff = input('> ')
+word = stuff.split(' ',1)
+print(word)
