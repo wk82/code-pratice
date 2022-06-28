@@ -28,9 +28,36 @@
 
 #a = open('/Users/kw/Downloads/aws725822194243/ak:sk/fudan.csv').read()
 #print(a.split(',')[2])
-a = ['a', 'b', 'c']
-b = ['1', '2', '3']
+#=========================
+#a = ['a', 'b', 'c']
+#b = ['1', '2', '3']#
 
-for sentence in a, b:
-    result = sentence[:2]
-    print(result)
+#for sentence in a, b:
+#    result = sentence[:2]
+#    print(result)
+#===========================
+
+
+#class other(object):#
+
+#    def override(self):
+#        print("other override()")#
+
+#    def implicit(self):
+#        print("other implicit()")#
+
+#    def altered(self):
+#        print("other altered()")#
+
+#class child(other):#
+
+#    def altered():
+#        print("child, before other altered()")
+#        super(child, self).altered()
+#        print("child, after other altered()")#
+#
+
+#son = child()
+#son.implicit()
+#son.override()
+#son.altered()
